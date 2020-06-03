@@ -1,0 +1,305 @@
+/*********GENERAL CSS EDITS***********/
+body {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+h1,
+h3,
+button {
+  color: hsl(192, 100%, 9%);
+  font-family: 'Poppins', sans-serif;
+}
+
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;*/
+.container {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.pink-button {
+  background: #FF52BF;
+  border-radius: 61px;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 100;
+  padding: 15px;
+  box-shadow: 1px 0px 6px 0px #000000;
+  border: solid #000000 0px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  width: 350px;
+}
+
+.pink-button:hover {
+  background: #FF23BF;
+}
+
+/***********INTRO***************/
+header {
+  background-color: hsl(193, 100%, 96%);
+  background-image: url("images/bg-hero-desktop.svg");
+  padding: 20px 30px 30px 30px;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.intro img {
+  width: 50vw;
+}
+
+.intro div {
+  padding-right: 50px;
+}
+
+.inside-header {
+  padding: 30px;
+}
+
+.logo-button {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.logo-button img {
+  width: 200px;
+}
+
+.logo-button button {
+  -webkit-border-radius: 37px;
+  -moz-border-radius: 37px;
+  border-radius: 37px;
+  height: 5px;
+  line-height: 5px;
+  color: #00252E;
+  width: 250px;
+  font-size: 18px;
+  font-weight: 100;
+  padding: 27px;
+  background-color: #FFFFFF;
+  box-shadow: 1px 1px 20px 0px rgba(220, 220, 220, .6);
+  border: solid rgba(240, 240, 240, 0.6) 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.logo-button button:hover {
+  background-color: #F5F5F5;
+}
+
+/****MIDDLE SECTION*****/
+h3 {
+  font-size: 1.5em;
+}
+
+.mid-text {
+  padding: 0 90px;
+}
+
+section {
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 50px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  align-items: center;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 1rem;
+  box-shadow: 1px 2px 2px 1px rgba(240, 240, 240, .6);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px 20px 15px 60px;
+  margin: 30px;
+}
+
+.box p {
+  color: hsl(208, 11%, 55%);
+}
+
+.box img {
+  width: 50%;
+}
+
+/*******READY TO BUILD BOX******/
+.get-started {
+  box-shadow: 1px 2px 2px 1px rgba(240, 240, 240, .6);
+  display: inline-block;
+  background-color: white;
+  text-align: center;
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 1rem;
+  padding: 40px 40px;
+  transform: translateY(50%);
+}
+
+.get-started button {
+  width: 350px;
+  margin: 0 auto;
+}
+
+/*****FIRST FOOTER *******/
+.first-footer {
+  background-color: hsl(192, 100%, 9%);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 200px 50px 70px 50px;
+}
+
+.copyright {
+  margin-top: 200px;
+  font-size: 10px;
+}
+
+.contact-info {
+  flex: 2;
+  padding-right: 100px;
+}
+
+.list1,
+.list2,
+.icons {
+  flex: 1;
+}
+
+li {
+  list-style: none;
+  line-height: 2;
+}
+
+ul {
+  padding-left: 0;
+}
+
+.icons {
+  padding: 0 1px;
+  font-size: 2rem;
+}
+
+#location-icon {
+  float: left;
+  margin: 5px 10px 50px 0;
+}
+
+/****ATTRIBUTION******/
+.attribution {
+  background-color: hsl(192, 100%, 9%);
+  color: white;
+  font-size: 11px;
+  margin: 0;
+  text-align: center;
+}
+
+.attribution a {
+  color: white;
+}
+
+/***MEDIA QUERIES*****/
+@media screen (max-width: 880px) {
+  #location-icon {
+    margin: 5px 10px 90px 0;
+  }
+}
+
+@media screen (max-width: 760px) {
+  .first-footer {
+    flex-direction: column;
+  }
+
+  #location-icon {
+    margin: 5px 10px 40px 0;
+  }
+
+  .copyright {
+    margin: 0;
+  }
+
+  .first-footer {
+    padding-bottom: 0;
+  }
+}
+
+@media screen (max-width: 375px) {
+  .intro {
+    flex-direction: column;
+  }
+
+  .intro img {
+    width: 100%;
+  }
+
+  .intro div {
+    padding-right: 0;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .intro button {
+    margin: 40px 0;
+  }
+
+  .logo-button button {
+    padding: 20px;
+    width: 200px;
+  }
+
+  .logo-button img {
+    width: 100px;
+  }
+
+  .box {
+    flex-direction: column;
+    padding: 30px 40px;
+    text-align: center;
+  }
+
+  .mid-text {
+    order: 2;
+    padding: 0;
+  }
+
+  #location-icon {
+    margin: 5px 10px 100px 0;
+  }
+
+  .list1 {
+    margin: 30px 0 0 0;
+  }
+
+  .list2 {
+    margin: 0;
+  }
+
+  .icons {
+    align-self: center;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .copyright {
+    margin: 0;
+  }
+
+  .first-footer {
+    padding-bottom: 0;
+  }
+}
